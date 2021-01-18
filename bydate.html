@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DailyNews | Search By Date</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#" id="navbar-title">DailyNews</a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">Search News</a>
+          <a class="navbar-item" href="category.html">Select Category</a>
+          <a class="navbar-item is-active" href="bydate.html">Search News by Date</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--card : keywords-->
+    <div class="block" id="keywords">
+      <div class="columns">
+        <div class="column is-2"></div>
+
+        <div class="column is-8">
+          <div class="card">
+            <header class="card-header">
+              <h1 class="card-header-title is-1">Search Past News</h1>
+              </a>
+            </header>
+            <div class="card-content">
+              <form id="dateNews">
+                <div class="field">
+                    <input type="date" id="datetime" class="input">
+                </div>
+                <button class="button is-success btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--seaction : content-->
+    <div class="container results" id="results-date">
+        <!--1-->
+        <!-- <div class="box">
+            <article class="media">
+              <div class="media-left">
+                  <img src="WhatsApp Image 2020-12-21 at 11.56.31 AM.jpeg" alt="Image" class="img">
+              </div>
+
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong class="spacing">ABC News</strong> <small>26th July 2020</small>
+                    <br>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, error.</h6>
+                    Lorem ipsum dolor Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+                <div class="content">
+                      <strong class="spacing">Author: TMZ</strong> <small>Category: General</small>
+                  </div>
+              </div>
+            </article> -->
+          </div>
+
+          
+          </div>
+
+
+    <!--footer-->
+    <footer>
+        <p>Gimna Katugampala Production</p>
+    </footer>
+
+    <script src="js/ui.js"></script>
+    <script src="js/news.api.js"></script>
+    <script src="js/bydate.js"></script>
+  </body>
+</html>

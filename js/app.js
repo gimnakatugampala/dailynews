@@ -20,6 +20,8 @@ searchNews.addEventListener('submit',function(e){
 
             //get all the body data
             getKeyData(data.data);
+
+          
         })
         .catch(err => console.log(err))
     }else{
